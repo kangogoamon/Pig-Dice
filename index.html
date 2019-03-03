@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css"
+    <h1><title>Pig Dice</title></h1>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <div>
+      <div class="jumbotron">
+        <h1>Welcome to Pig Dice</h1>
+          <form id="playerOne">
+            <div class="form-group">
+              <label for="nameOne">Player 1:</label>
+              <input required class="nameOne" type="text">
+            </div>
+          </form>
+          <form id="playerTwo">
+            <div class="form-group">
+              <label for="nameTwo">Player 2:</label>
+              <input required class="nameTwo" type="text">
+            </div>
+          </form>
+          <button id="start" class="btn-info btn">PLAY</button>
+      </div>
+    </div>
+
+    <div class="console container">
+        <button id ="new-game" class="btn-success btn">NEW GAME</button>
+        <div class = "row">
+          <div class="col-md-6">
+            <h2>Player 1: <span id = "nameOne"><span></h2>
+              <button id="player1-roll" class="btn-success btn">Roll</button>
+              <button id="player1-hold" class="btn-success btn">Hold</button>
+            <h2>Dice Roll: <span id="die-roll-1"></span></h2>
+            <p>Round Total: <span id="roundTotal-1"></span></p>
+            <p>Total Score: <span id="total-score-1"></span></p>
+          </div>
+
+        <div class="col-md-6">
+          <h2>Player 2: <span id = "nameTwo"><span></h2>
+            <button id="player2-roll" class="btn-success btn">Roll</button>
+            <button id="player2-hold" class="btn-success btn">Hold</button>
+            <h2>Dice Roll: <span id="die-roll-2"></span></h2>
+            <p>Round Total: <span id="roundTotal-2"></span></p>
+            <p>Total Score: <span id="total-score-2"></span></p>
+        </div>
+        </div>
+      </div>
+  </body>
+</html>

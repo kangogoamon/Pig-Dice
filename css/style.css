@@ -1,0 +1,23 @@
+body{
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 100px;
+}
+.form-group label{
+  color: firebrick;
+}
+.row{
+  color: sienna;
+}
+#die-roll-1, #die-roll-2{
+  color: silver;
+}
+#nameOne, #nameTwo{
+  color: white;
+}
+#roundTotal-1, #roundTotal-2{
+  color: white;
+}
+#total-score-1, #total-score-2{
+  color: white;
+}
