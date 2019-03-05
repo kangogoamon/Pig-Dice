@@ -17,6 +17,8 @@ function Player(turn) {
 }
 
     // checking for roll of 1 //
+
+
 Player.prototype.rollone = function() {
   if (this.roll === 1) {
   this.tempscore = 0;
@@ -27,22 +29,26 @@ Player.prototype.rollone = function() {
   }
 }
 
-      // hold //
+      // hold - to tally your rolls to the total and allow next player to play//
+
+
 Player.prototype.hold = function () {
   this.totalscore += this.tempscore;
   this.tempscore = 0;
 
-  alert(this.playerName + ", Your turn is over, next Player");
 }
-    // check for 100 //
+
+    // check for 100 - The first player to reach 100 wins!//
+
+
 Player.prototype.winnerCheck = function () {
   if (this.totalscore >= 100) {
     alert(this.playerName + " You are the winner!");
   }
 }
 
+ //Refresh just the game and not the players names//
 Player.prototype.newGame = function () {
-  //debugger;
   this.roll = 0;
   this.tempscore = 0;
   this.totalscore = 0;
@@ -50,13 +56,13 @@ Player.prototype.newGame = function () {
 }
 
 var clearValues = function(){
-  $(".player1Name").val("");
-  $(".player2Name").val("");
+  $(".nameOne").val("");
+  $(".nameTwo").val("");
 }
 
-    //User Interface//
+      //User Interface//
   $(document).ready(function() {
-
+  $(".console").hide();
   $("button#start").click(function(event){
     player1 = new Player(true);
     player2 =  new Player(false);
