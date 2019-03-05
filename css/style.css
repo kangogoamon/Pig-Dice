@@ -4,10 +4,10 @@ body{
   padding-bottom: 100px;
 }
 .form-group label{
-  color: firebrick;
+  color: black;
 }
 .row{
-  color: sienna;
+  color: black;
 }
 #die-roll-1, #die-roll-2{
   color: silver;
