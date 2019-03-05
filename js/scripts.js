@@ -61,12 +61,12 @@ var clearValues = function(){
 }
 
       //User Interface//
-  $(document).ready(function() {
+$(document).ready(function() {
   $(".console").hide();
   $("button#start").click(function(event){
     player1 = new Player(true);
     player2 =  new Player(false);
-    $(".player-console").show();
+    $(".console").show();
     $(".start-menu").hide();
 
     var player1Name = $(".player1Name").val();
