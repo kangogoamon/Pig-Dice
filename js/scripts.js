@@ -61,7 +61,7 @@ var clearValues = function(){
 }
 
       //User Interface//
-$(document).ready(function() {
+$(document).ready(function(event) {
   $(".console").hide();
   $("button#start").click(function(event){
     player1 = new Player(true);
