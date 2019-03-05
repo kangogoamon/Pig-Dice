@@ -11,16 +11,16 @@
     <div>
       <div class="jumbotron">
         <h1>Welcome to Pig Dice</h1>
-          <form id="playerOne">
+          <form id="player-1">
             <div class="form-group">
-              <label for="nameOne">Player 1:</label>
-              <input required class="nameOne" type="text">
+              <label for="name1Name">Player 1 Name:</label>
+              <input required class="player1Name form-control" type="text">
             </div>
           </form>
-          <form id="playerTwo">
+          <form id="player-2">
             <div class="form-group">
-              <label for="nameTwo">Player 2:</label>
-              <input required class="nameTwo" type="text">
+              <label for="name2Name">Player 2 Name:</label>
+              <input required class="name2Name" type="text">
             </div>
           </form>
           <button id="start" class="btn-info btn">PLAY</button>
@@ -31,7 +31,7 @@
         <button id ="new-game" class="btn-success btn">NEW GAME</button>
         <div class = "row">
           <div class="col-md-6">
-            <h2>Player 1: <span id = "nameOne"><span></h2>
+            <h2>Player 1: <span id = "player1Name"><span></h2>
               <button id="player1-roll" class="btn-success btn">Roll</button>
               <button id="player1-hold" class="btn-success btn">Hold</button>
             <h2>Dice Roll: <span id="die-roll-1"></span></h2>
@@ -40,7 +40,7 @@
           </div>
 
         <div class="col-md-6">
-          <h2>Player 2: <span id = "nameTwo"><span></h2>
+          <h2>Player 2: <span id = "player2Name"><span></h2>
             <button id="player2-roll" class="btn-success btn">Roll</button>
             <button id="player2-hold" class="btn-success btn">Hold</button>
             <h2>Dice Roll: <span id="die-roll-2"></span></h2>
@@ -49,5 +49,7 @@
         </div>
         </div>
       </div>
+      <script   src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
+      <script src="js/scripts.js"></script>
   </body>
 </html>
