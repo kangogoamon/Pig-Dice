@@ -1,25 +1,27 @@
-
 body{
-  background-repeat: no-repeat;
-  background-image: url(dicebg.gif);
-  background-size: cover;
+h1{
+  font-family: sans-serif;
+  text-align: center;
+}
   padding-bottom: 100px;
+  padding-right: 20px;
+  padding-left: 20px
 }
 .form-group label{
-  color: black;
+  color: C0C0C0;
 }
 .row{
   color: black;
 }
 #die-roll-1, #die-roll-2{
-  color: white;
+  color: black;
 }
 #nameOne, #nameTwo{
-  color: white;
+  color: black;
 }
 #roundTotal-1, #roundTotal-2{
-  color: white;
+  color: black;
 }
 #total-score-1, #total-score-2{
-  color: white;
+  color: black;
 }
